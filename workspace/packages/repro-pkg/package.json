@@ -1,0 +1,14 @@
+{
+  "name": "repro-pkg",
+  "version": "1.0.0",
+  "type": "module",
+  "devDependencies": {
+    "vitest": "3.2.3"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "tsx": "^4.21.0"
+  }
+}

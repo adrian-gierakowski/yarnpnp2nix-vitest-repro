@@ -1,0 +1,7 @@
+{
+  "name": "repro-vitest-root",
+  "packageManager": "yarn@4.7.0",
+  "workspaces": [
+    "packages/*"
+  ]
+}
