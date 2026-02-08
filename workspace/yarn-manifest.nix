@@ -140,26 +140,28 @@ let
       reference = "npm:0.27.2";
       linkType = "HARD";
       outputName = "esbuild-darwin-x64-0.27.2-ae63bf405f";
-      outputHash = "";
+      outputHash = "5d3207cf85674b01a817c43064525e39b215802a9ecf352d15e92e926c3e549d95b30e127c2d3f8196ac9472ecca87a861d9f270221ee55884c7a6d0aa636fe1";
       shouldBeUnplugged = true;
       installCondition = stdenv: (stdenv.isDarwin) && (stdenv.isx86_64);
       flatName = "darwin-x64";
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
+      checksum = "10c0/5d3207cf85674b01a817c43064525e39b215802a9ecf352d15e92e926c3e549d95b30e127c2d3f8196ac9472ecca87a861d9f270221ee55884c7a6d0aa636fe1";
     };
     "@esbuild/darwin-x64@npm:0.27.3" = {
       name = "@esbuild/darwin-x64";
       reference = "npm:0.27.3";
       linkType = "HARD";
       outputName = "esbuild-darwin-x64-0.27.3-f27535b6d7";
-      outputHash = "";
+      outputHash = "82b40ecc020cd73339be2188434cc72e9fcbf265fa12e8fa9a187891db782e6e9281d13307921b820772bad831defef6865814603d606fa30c6f25d8233c307d";
       shouldBeUnplugged = true;
       installCondition = stdenv: (stdenv.isDarwin) && (stdenv.isx86_64);
       flatName = "darwin-x64";
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.3";
+      checksum = "10c0/82b40ecc020cd73339be2188434cc72e9fcbf265fa12e8fa9a187891db782e6e9281d13307921b820772bad831defef6865814603d606fa30c6f25d8233c307d";
     };
     "@esbuild/freebsd-arm64@npm:0.27.2" = {
       name = "@esbuild/freebsd-arm64";
@@ -244,26 +246,28 @@ let
       reference = "npm:0.27.2";
       linkType = "HARD";
       outputName = "esbuild-linux-arm64-0.27.2-bf1b0979ac";
-      outputHash = "";
+      outputHash = "89b8e94e2f4e7cf564623bb6b1d2e9ab218c6d4cafed93778fb797b552d3495f08c99e49d9a2573823bc62660353ce4b4cf17a2828359a3437a9caf8da99673b";
       shouldBeUnplugged = true;
       installCondition = stdenv: (stdenv.isLinux) && (stdenv.isAarch64);
       flatName = "linux-arm64";
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
+      checksum = "10c0/89b8e94e2f4e7cf564623bb6b1d2e9ab218c6d4cafed93778fb797b552d3495f08c99e49d9a2573823bc62660353ce4b4cf17a2828359a3437a9caf8da99673b";
     };
     "@esbuild/linux-arm64@npm:0.27.3" = {
       name = "@esbuild/linux-arm64";
       reference = "npm:0.27.3";
       linkType = "HARD";
       outputName = "esbuild-linux-arm64-0.27.3-a9fedc262b";
-      outputHash = "";
+      outputHash = "7241a7d77a04b6b2935ea8c4d0f5bebb27f16c6795d2b3c8d8efadc4ae50e42568041fd6103a7a213277009350c2adaa2331b73eb2e91ca7a7a8d6c6b8751679";
       shouldBeUnplugged = true;
       installCondition = stdenv: (stdenv.isLinux) && (stdenv.isAarch64);
       flatName = "linux-arm64";
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.3";
+      checksum = "10c0/7241a7d77a04b6b2935ea8c4d0f5bebb27f16c6795d2b3c8d8efadc4ae50e42568041fd6103a7a213277009350c2adaa2331b73eb2e91ca7a7a8d6c6b8751679";
     };
     "@esbuild/linux-ia32@npm:0.27.2" = {
       name = "@esbuild/linux-ia32";
@@ -433,19 +437,21 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
+      checksum = "10c0/febde9f6908220698cf72947534eca590c2b5ce8b0c9bc6170649c5f64f7f93808bb9be2caabd7c63068dc68e218741f27a17ffb8826d87fb487a0639888b90f";
     };
     "@esbuild/linux-x64@npm:0.27.3" = {
       name = "@esbuild/linux-x64";
       reference = "npm:0.27.3";
       linkType = "HARD";
       outputName = "esbuild-linux-x64-0.27.3-2041dd7b27";
-      outputHash = "";
+      outputHash = "985ec2ffa73680fa6a2ba73a8d7027630f40e4155302f1de1c8c27857f8fe46e3454a76b9efd509abaf40e5cd8e40ffec8224c45d0040c360435bf3c5de3204f";
       shouldBeUnplugged = true;
       installCondition = stdenv: (stdenv.isLinux) && (stdenv.isx86_64);
       flatName = "linux-x64";
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.3";
+      checksum = "10c0/985ec2ffa73680fa6a2ba73a8d7027630f40e4155302f1de1c8c27857f8fe46e3454a76b9efd509abaf40e5cd8e40ffec8224c45d0040c360435bf3c5de3204f";
     };
     "@esbuild/netbsd-arm64@npm:0.27.2" = {
       name = "@esbuild/netbsd-arm64";
@@ -814,13 +820,14 @@ let
       reference = "npm:4.57.1";
       linkType = "HARD";
       outputName = "rollup-rollup-darwin-x64-4.57.1-a79270fa64";
-      outputHash = "";
+      outputHash = "6c5c5982f278d1705fd41ef483112d7d63b24bb2c42b6db32dcabe09a8cd13522edb69166f3f9a3892450acca9c12f43e388e06bf1e94f3fbb85e58f4581aff2";
       shouldBeUnplugged = true;
       installCondition = stdenv: (stdenv.isDarwin) && (stdenv.isx86_64);
       flatName = "rollup-darwin-x64";
       languageName = "node";
       scope = "rollup";
       descriptorRange = "npm:4.57.1";
+      checksum = "10c0/6c5c5982f278d1705fd41ef483112d7d63b24bb2c42b6db32dcabe09a8cd13522edb69166f3f9a3892450acca9c12f43e388e06bf1e94f3fbb85e58f4581aff2";
     };
     "@rollup/rollup-freebsd-arm64@npm:4.57.1" = {
       name = "@rollup/rollup-freebsd-arm64";
@@ -879,13 +886,14 @@ let
       reference = "npm:4.57.1";
       linkType = "HARD";
       outputName = "rollup-rollup-linux-arm64-gnu-4.57.1-fd27dea33b";
-      outputHash = "";
+      outputHash = "7c1df0ff5fde0ca032e0866ff39f5d3e4bcedce52cb5ca8be5e72780b03371cc4d076882a0ecd292b09683c3fcf109331f5a3ca8f5b18e2810703b17bd906071";
       shouldBeUnplugged = true;
       installCondition = stdenv: (stdenv.isLinux) && (stdenv.isAarch64);
       flatName = "rollup-linux-arm64-gnu";
       languageName = "node";
       scope = "rollup";
       descriptorRange = "npm:4.57.1";
+      checksum = "10c0/7c1df0ff5fde0ca032e0866ff39f5d3e4bcedce52cb5ca8be5e72780b03371cc4d076882a0ecd292b09683c3fcf109331f5a3ca8f5b18e2810703b17bd906071";
     };
     "@rollup/rollup-linux-arm64-musl@npm:4.57.1" = {
       name = "@rollup/rollup-linux-arm64-musl";
@@ -1003,6 +1011,7 @@ let
       languageName = "node";
       scope = "rollup";
       descriptorRange = "npm:4.57.1";
+      checksum = "10c0/4f335bc0dd6153690eb7d080665256c23b1e90cc7acb4870413f6df923a99712d91bf596c00c3d54c275da9cb7a2c29f4c6767b8e24fa61eac592323342eec5e";
     };
     "@rollup/rollup-linux-x64-musl@npm:4.57.1" = {
       name = "@rollup/rollup-linux-x64-musl";
@@ -2545,7 +2554,7 @@ let
       flatName = "tinyglobby";
       languageName = "node";
       scope = null;
-      descriptorRange = "npm:^0.2.14";
+      descriptorRange = "npm:^0.2.12";
       checksum = "10c0/869c31490d0d88eedb8305d178d4c75e7463e820df5a9b9d388291daf93e8b1eb5de1dad1c1e139767e4269fe75f3b10d5009b2cc14db96ff98986920a186844";
       dependencies = {
         "fdir" = packages."fdir@virtual:0e783aadbd2b4b8e6f6056033c0b290501892d23bc7c5dad5477e00e48ad8bd3e4434c3962a52dd75a58e06dbb7218094a494bac954ef2f7f6fdb65d9717e5f4#npm:6.5.0";

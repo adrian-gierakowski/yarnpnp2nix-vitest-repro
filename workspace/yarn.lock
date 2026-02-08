@@ -80,6 +80,7 @@ __metadata:
 "@esbuild/darwin-x64@npm:0.27.2":
   version: 0.27.2
   resolution: "@esbuild/darwin-x64@npm:0.27.2"
+  checksum: 10c0/5d3207cf85674b01a817c43064525e39b215802a9ecf352d15e92e926c3e549d95b30e127c2d3f8196ac9472ecca87a861d9f270221ee55884c7a6d0aa636fe1
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -87,6 +88,7 @@ __metadata:
 "@esbuild/darwin-x64@npm:0.27.3":
   version: 0.27.3
   resolution: "@esbuild/darwin-x64@npm:0.27.3"
+  checksum: 10c0/82b40ecc020cd73339be2188434cc72e9fcbf265fa12e8fa9a187891db782e6e9281d13307921b820772bad831defef6865814603d606fa30c6f25d8233c307d
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -122,6 +124,7 @@ __metadata:
 "@esbuild/linux-arm64@npm:0.27.2":
   version: 0.27.2
   resolution: "@esbuild/linux-arm64@npm:0.27.2"
+  checksum: 10c0/89b8e94e2f4e7cf564623bb6b1d2e9ab218c6d4cafed93778fb797b552d3495f08c99e49d9a2573823bc62660353ce4b4cf17a2828359a3437a9caf8da99673b
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
@@ -129,6 +132,7 @@ __metadata:
 "@esbuild/linux-arm64@npm:0.27.3":
   version: 0.27.3
   resolution: "@esbuild/linux-arm64@npm:0.27.3"
+  checksum: 10c0/7241a7d77a04b6b2935ea8c4d0f5bebb27f16c6795d2b3c8d8efadc4ae50e42568041fd6103a7a213277009350c2adaa2331b73eb2e91ca7a7a8d6c6b8751679
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
@@ -234,6 +238,7 @@ __metadata:
 "@esbuild/linux-x64@npm:0.27.2":
   version: 0.27.2
   resolution: "@esbuild/linux-x64@npm:0.27.2"
+  checksum: 10c0/febde9f6908220698cf72947534eca590c2b5ce8b0c9bc6170649c5f64f7f93808bb9be2caabd7c63068dc68e218741f27a17ffb8826d87fb487a0639888b90f
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
@@ -241,6 +246,7 @@ __metadata:
 "@esbuild/linux-x64@npm:0.27.3":
   version: 0.27.3
   resolution: "@esbuild/linux-x64@npm:0.27.3"
+  checksum: 10c0/985ec2ffa73680fa6a2ba73a8d7027630f40e4155302f1de1c8c27857f8fe46e3454a76b9efd509abaf40e5cd8e40ffec8224c45d0040c360435bf3c5de3204f
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
@@ -450,6 +456,7 @@ __metadata:
 "@rollup/rollup-darwin-x64@npm:4.57.1":
   version: 4.57.1
   resolution: "@rollup/rollup-darwin-x64@npm:4.57.1"
+  checksum: 10c0/6c5c5982f278d1705fd41ef483112d7d63b24bb2c42b6db32dcabe09a8cd13522edb69166f3f9a3892450acca9c12f43e388e06bf1e94f3fbb85e58f4581aff2
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -485,6 +492,7 @@ __metadata:
 "@rollup/rollup-linux-arm64-gnu@npm:4.57.1":
   version: 4.57.1
   resolution: "@rollup/rollup-linux-arm64-gnu@npm:4.57.1"
+  checksum: 10c0/7c1df0ff5fde0ca032e0866ff39f5d3e4bcedce52cb5ca8be5e72780b03371cc4d076882a0ecd292b09683c3fcf109331f5a3ca8f5b18e2810703b17bd906071
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
@@ -548,6 +556,7 @@ __metadata:
 "@rollup/rollup-linux-x64-gnu@npm:4.57.1":
   version: 4.57.1
   resolution: "@rollup/rollup-linux-x64-gnu@npm:4.57.1"
+  checksum: 10c0/4f335bc0dd6153690eb7d080665256c23b1e90cc7acb4870413f6df923a99712d91bf596c00c3d54c275da9cb7a2c29f4c6767b8e24fa61eac592323342eec5e
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
