@@ -16,19 +16,6 @@ let
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
     };
-    "@esbuild/aix-ppc64@npm:0.27.3" = {
-      name = "@esbuild/aix-ppc64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-aix-ppc64-0.27.3-28583f301d";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (false);
-      flatName = "aix-ppc64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-    };
     "@esbuild/android-arm@npm:0.27.2" = {
       name = "@esbuild/android-arm";
       reference = "npm:0.27.2";
@@ -41,19 +28,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/android-arm@npm:0.27.3" = {
-      name = "@esbuild/android-arm";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-android-arm-0.27.3-a9020951d9";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isAarch32);
-      flatName = "android-arm";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@esbuild/android-arm64@npm:0.27.2" = {
       name = "@esbuild/android-arm64";
@@ -68,19 +42,6 @@ let
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
     };
-    "@esbuild/android-arm64@npm:0.27.3" = {
-      name = "@esbuild/android-arm64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-android-arm64-0.27.3-3d7f480203";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isAarch64);
-      flatName = "android-arm64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-    };
     "@esbuild/android-x64@npm:0.27.2" = {
       name = "@esbuild/android-x64";
       reference = "npm:0.27.2";
@@ -93,19 +54,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/android-x64@npm:0.27.3" = {
-      name = "@esbuild/android-x64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-android-x64-0.27.3-c71d5a3153";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isx86_64);
-      flatName = "android-x64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@esbuild/darwin-arm64@npm:0.27.2" = {
       name = "@esbuild/darwin-arm64";
@@ -121,20 +69,6 @@ let
       descriptorRange = "npm:0.27.2";
       checksum = "10c0/cf08b03672941acbea8b509db79a7cb9cf8c81b563c75414c87b8c8442cb1178063eaa14b7cd1ae6cae95dba7e1de9343b721a6d19523a5f21c3d1367e3688b7";
     };
-    "@esbuild/darwin-arm64@npm:0.27.3" = {
-      name = "@esbuild/darwin-arm64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-darwin-arm64-0.27.3-4c8fed986d";
-      outputHash = "44263770db87f13894cac33e09306d32730549fa15a251d179a500960581db8a77388f19e0d6307c39da3ae5f9417d1ed54b0bbaf0cb35a3b7c0b1a3d65106c4";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (stdenv.isDarwin) && (stdenv.isAarch64);
-      flatName = "darwin-arm64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-      checksum = "10c0/44263770db87f13894cac33e09306d32730549fa15a251d179a500960581db8a77388f19e0d6307c39da3ae5f9417d1ed54b0bbaf0cb35a3b7c0b1a3d65106c4";
-    };
     "@esbuild/darwin-x64@npm:0.27.2" = {
       name = "@esbuild/darwin-x64";
       reference = "npm:0.27.2";
@@ -149,20 +83,6 @@ let
       descriptorRange = "npm:0.27.2";
       checksum = "10c0/5d3207cf85674b01a817c43064525e39b215802a9ecf352d15e92e926c3e549d95b30e127c2d3f8196ac9472ecca87a861d9f270221ee55884c7a6d0aa636fe1";
     };
-    "@esbuild/darwin-x64@npm:0.27.3" = {
-      name = "@esbuild/darwin-x64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-darwin-x64-0.27.3-f27535b6d7";
-      outputHash = "82b40ecc020cd73339be2188434cc72e9fcbf265fa12e8fa9a187891db782e6e9281d13307921b820772bad831defef6865814603d606fa30c6f25d8233c307d";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (stdenv.isDarwin) && (stdenv.isx86_64);
-      flatName = "darwin-x64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-      checksum = "10c0/82b40ecc020cd73339be2188434cc72e9fcbf265fa12e8fa9a187891db782e6e9281d13307921b820772bad831defef6865814603d606fa30c6f25d8233c307d";
-    };
     "@esbuild/freebsd-arm64@npm:0.27.2" = {
       name = "@esbuild/freebsd-arm64";
       reference = "npm:0.27.2";
@@ -175,19 +95,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/freebsd-arm64@npm:0.27.3" = {
-      name = "@esbuild/freebsd-arm64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-freebsd-arm64-0.27.3-9b167bbc41";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isAarch64);
-      flatName = "freebsd-arm64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@esbuild/freebsd-x64@npm:0.27.2" = {
       name = "@esbuild/freebsd-x64";
@@ -202,19 +109,6 @@ let
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
     };
-    "@esbuild/freebsd-x64@npm:0.27.3" = {
-      name = "@esbuild/freebsd-x64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-freebsd-x64-0.27.3-41645c0759";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isx86_64);
-      flatName = "freebsd-x64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-    };
     "@esbuild/linux-arm@npm:0.27.2" = {
       name = "@esbuild/linux-arm";
       reference = "npm:0.27.2";
@@ -227,19 +121,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/linux-arm@npm:0.27.3" = {
-      name = "@esbuild/linux-arm";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-linux-arm-0.27.3-49bd02d78a";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (stdenv.isLinux) && (stdenv.isAarch32);
-      flatName = "linux-arm";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@esbuild/linux-arm64@npm:0.27.2" = {
       name = "@esbuild/linux-arm64";
@@ -255,20 +136,6 @@ let
       descriptorRange = "npm:0.27.2";
       checksum = "10c0/89b8e94e2f4e7cf564623bb6b1d2e9ab218c6d4cafed93778fb797b552d3495f08c99e49d9a2573823bc62660353ce4b4cf17a2828359a3437a9caf8da99673b";
     };
-    "@esbuild/linux-arm64@npm:0.27.3" = {
-      name = "@esbuild/linux-arm64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-linux-arm64-0.27.3-a9fedc262b";
-      outputHash = "7241a7d77a04b6b2935ea8c4d0f5bebb27f16c6795d2b3c8d8efadc4ae50e42568041fd6103a7a213277009350c2adaa2331b73eb2e91ca7a7a8d6c6b8751679";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (stdenv.isLinux) && (stdenv.isAarch64);
-      flatName = "linux-arm64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-      checksum = "10c0/7241a7d77a04b6b2935ea8c4d0f5bebb27f16c6795d2b3c8d8efadc4ae50e42568041fd6103a7a213277009350c2adaa2331b73eb2e91ca7a7a8d6c6b8751679";
-    };
     "@esbuild/linux-ia32@npm:0.27.2" = {
       name = "@esbuild/linux-ia32";
       reference = "npm:0.27.2";
@@ -281,19 +148,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/linux-ia32@npm:0.27.3" = {
-      name = "@esbuild/linux-ia32";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-linux-ia32-0.27.3-f45d477f3e";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (stdenv.isLinux) && (stdenv.isi686);
-      flatName = "linux-ia32";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@esbuild/linux-loong64@npm:0.27.2" = {
       name = "@esbuild/linux-loong64";
@@ -308,19 +162,6 @@ let
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
     };
-    "@esbuild/linux-loong64@npm:0.27.3" = {
-      name = "@esbuild/linux-loong64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-linux-loong64-0.27.3-88ac081187";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (stdenv.isLinux) && (false);
-      flatName = "linux-loong64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-    };
     "@esbuild/linux-mips64el@npm:0.27.2" = {
       name = "@esbuild/linux-mips64el";
       reference = "npm:0.27.2";
@@ -333,19 +174,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/linux-mips64el@npm:0.27.3" = {
-      name = "@esbuild/linux-mips64el";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-linux-mips64el-0.27.3-366a446ba9";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (stdenv.isLinux) && (false);
-      flatName = "linux-mips64el";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@esbuild/linux-ppc64@npm:0.27.2" = {
       name = "@esbuild/linux-ppc64";
@@ -360,19 +188,6 @@ let
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
     };
-    "@esbuild/linux-ppc64@npm:0.27.3" = {
-      name = "@esbuild/linux-ppc64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-linux-ppc64-0.27.3-abfa4eb56e";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (stdenv.isLinux) && (false);
-      flatName = "linux-ppc64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-    };
     "@esbuild/linux-riscv64@npm:0.27.2" = {
       name = "@esbuild/linux-riscv64";
       reference = "npm:0.27.2";
@@ -386,19 +201,6 @@ let
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
     };
-    "@esbuild/linux-riscv64@npm:0.27.3" = {
-      name = "@esbuild/linux-riscv64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-linux-riscv64-0.27.3-fe0b457682";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (stdenv.isLinux) && (false);
-      flatName = "linux-riscv64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-    };
     "@esbuild/linux-s390x@npm:0.27.2" = {
       name = "@esbuild/linux-s390x";
       reference = "npm:0.27.2";
@@ -411,19 +213,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/linux-s390x@npm:0.27.3" = {
-      name = "@esbuild/linux-s390x";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-linux-s390x-0.27.3-a3901c1419";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (stdenv.isLinux) && (false);
-      flatName = "linux-s390x";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@esbuild/linux-x64@npm:0.27.2" = {
       name = "@esbuild/linux-x64";
@@ -439,20 +228,6 @@ let
       descriptorRange = "npm:0.27.2";
       checksum = "10c0/febde9f6908220698cf72947534eca590c2b5ce8b0c9bc6170649c5f64f7f93808bb9be2caabd7c63068dc68e218741f27a17ffb8826d87fb487a0639888b90f";
     };
-    "@esbuild/linux-x64@npm:0.27.3" = {
-      name = "@esbuild/linux-x64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-linux-x64-0.27.3-2041dd7b27";
-      outputHash = "985ec2ffa73680fa6a2ba73a8d7027630f40e4155302f1de1c8c27857f8fe46e3454a76b9efd509abaf40e5cd8e40ffec8224c45d0040c360435bf3c5de3204f";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (stdenv.isLinux) && (stdenv.isx86_64);
-      flatName = "linux-x64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-      checksum = "10c0/985ec2ffa73680fa6a2ba73a8d7027630f40e4155302f1de1c8c27857f8fe46e3454a76b9efd509abaf40e5cd8e40ffec8224c45d0040c360435bf3c5de3204f";
-    };
     "@esbuild/netbsd-arm64@npm:0.27.2" = {
       name = "@esbuild/netbsd-arm64";
       reference = "npm:0.27.2";
@@ -465,19 +240,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/netbsd-arm64@npm:0.27.3" = {
-      name = "@esbuild/netbsd-arm64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-netbsd-arm64-0.27.3-e62baa2b8c";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isAarch64);
-      flatName = "netbsd-arm64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@esbuild/netbsd-x64@npm:0.27.2" = {
       name = "@esbuild/netbsd-x64";
@@ -492,19 +254,6 @@ let
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
     };
-    "@esbuild/netbsd-x64@npm:0.27.3" = {
-      name = "@esbuild/netbsd-x64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-netbsd-x64-0.27.3-04c8b6bf87";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isx86_64);
-      flatName = "netbsd-x64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-    };
     "@esbuild/openbsd-arm64@npm:0.27.2" = {
       name = "@esbuild/openbsd-arm64";
       reference = "npm:0.27.2";
@@ -517,19 +266,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/openbsd-arm64@npm:0.27.3" = {
-      name = "@esbuild/openbsd-arm64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-openbsd-arm64-0.27.3-f249832d7a";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isAarch64);
-      flatName = "openbsd-arm64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@esbuild/openbsd-x64@npm:0.27.2" = {
       name = "@esbuild/openbsd-x64";
@@ -544,19 +280,6 @@ let
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
     };
-    "@esbuild/openbsd-x64@npm:0.27.3" = {
-      name = "@esbuild/openbsd-x64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-openbsd-x64-0.27.3-1270973fae";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isx86_64);
-      flatName = "openbsd-x64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-    };
     "@esbuild/openharmony-arm64@npm:0.27.2" = {
       name = "@esbuild/openharmony-arm64";
       reference = "npm:0.27.2";
@@ -569,19 +292,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/openharmony-arm64@npm:0.27.3" = {
-      name = "@esbuild/openharmony-arm64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-openharmony-arm64-0.27.3-ef55456c0b";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isAarch64);
-      flatName = "openharmony-arm64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@esbuild/sunos-x64@npm:0.27.2" = {
       name = "@esbuild/sunos-x64";
@@ -596,19 +306,6 @@ let
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
     };
-    "@esbuild/sunos-x64@npm:0.27.3" = {
-      name = "@esbuild/sunos-x64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-sunos-x64-0.27.3-b9cf8f5e3b";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isx86_64);
-      flatName = "sunos-x64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-    };
     "@esbuild/win32-arm64@npm:0.27.2" = {
       name = "@esbuild/win32-arm64";
       reference = "npm:0.27.2";
@@ -621,19 +318,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/win32-arm64@npm:0.27.3" = {
-      name = "@esbuild/win32-arm64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-win32-arm64-0.27.3-4efe5a15ad";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isAarch64);
-      flatName = "win32-arm64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@esbuild/win32-ia32@npm:0.27.2" = {
       name = "@esbuild/win32-ia32";
@@ -648,19 +332,6 @@ let
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
     };
-    "@esbuild/win32-ia32@npm:0.27.3" = {
-      name = "@esbuild/win32-ia32";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-win32-ia32-0.27.3-bfe05b431c";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isi686);
-      flatName = "win32-ia32";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
-    };
     "@esbuild/win32-x64@npm:0.27.2" = {
       name = "@esbuild/win32-x64";
       reference = "npm:0.27.2";
@@ -673,19 +344,6 @@ let
       languageName = "node";
       scope = "esbuild";
       descriptorRange = "npm:0.27.2";
-    };
-    "@esbuild/win32-x64@npm:0.27.3" = {
-      name = "@esbuild/win32-x64";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-win32-x64-0.27.3-c6a1294f67";
-      outputHash = "";
-      shouldBeUnplugged = true;
-      installCondition = stdenv: (false) && (stdenv.isx86_64);
-      flatName = "win32-x64";
-      languageName = "node";
-      scope = "esbuild";
-      descriptorRange = "npm:0.27.3";
     };
     "@isaacs/balanced-match@npm:4.0.1" = {
       name = "@isaacs/balanced-match";
@@ -1428,9 +1086,9 @@ let
         "supports-color"
       ];
     };
-    "debug@virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3" = {
+    "debug@virtual:681630615e946e2f200c54b059afee56e65208a184161197fdec80c0837941d910208eb4a140e14a179b409cdf368e34755a0f5983828c59cb7f34a62911042b#npm:4.4.3" = {
       name = "debug";
-      reference = "virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3";
+      reference = "virtual:681630615e946e2f200c54b059afee56e65208a184161197fdec80c0837941d910208eb4a140e14a179b409cdf368e34755a0f5983828c59cb7f34a62911042b#npm:4.4.3";
       canonicalPackage = packages."debug@npm:4.4.3";
       dependencies = {
         "ms" = packages."ms@npm:2.1.3";
@@ -1541,50 +1199,6 @@ let
         "@esbuild/win32-arm64" = packages."@esbuild/win32-arm64@npm:0.27.2";
         "@esbuild/win32-ia32" = packages."@esbuild/win32-ia32@npm:0.27.2";
         "@esbuild/win32-x64" = packages."@esbuild/win32-x64@npm:0.27.2";
-      };
-    };
-    "esbuild@npm:0.27.3" = {
-      name = "esbuild";
-      reference = "npm:0.27.3";
-      linkType = "HARD";
-      outputName = "esbuild-0.27.3-85b6c20323";
-      outputHash = "fdc3f87a3f08b3ef98362f37377136c389a0d180fda4b8d073b26ba930cf245521db0a368f119cc7624bc619248fff1439f5811f062d853576f8ffa3df8ee5f1";
-      shouldBeUnplugged = true;
-      flatName = "esbuild";
-      languageName = "node";
-      scope = null;
-      descriptorRange = "npm:~0.27.0";
-      checksum = "10c0/fdc3f87a3f08b3ef98362f37377136c389a0d180fda4b8d073b26ba930cf245521db0a368f119cc7624bc619248fff1439f5811f062d853576f8ffa3df8ee5f1";
-      bin = {
-        "esbuild" = "bin/esbuild";
-      };
-      dependencies = {
-        "@esbuild/aix-ppc64" = packages."@esbuild/aix-ppc64@npm:0.27.3";
-        "@esbuild/android-arm64" = packages."@esbuild/android-arm64@npm:0.27.3";
-        "@esbuild/android-arm" = packages."@esbuild/android-arm@npm:0.27.3";
-        "@esbuild/android-x64" = packages."@esbuild/android-x64@npm:0.27.3";
-        "@esbuild/darwin-arm64" = packages."@esbuild/darwin-arm64@npm:0.27.3";
-        "@esbuild/darwin-x64" = packages."@esbuild/darwin-x64@npm:0.27.3";
-        "@esbuild/freebsd-arm64" = packages."@esbuild/freebsd-arm64@npm:0.27.3";
-        "@esbuild/freebsd-x64" = packages."@esbuild/freebsd-x64@npm:0.27.3";
-        "@esbuild/linux-arm64" = packages."@esbuild/linux-arm64@npm:0.27.3";
-        "@esbuild/linux-arm" = packages."@esbuild/linux-arm@npm:0.27.3";
-        "@esbuild/linux-ia32" = packages."@esbuild/linux-ia32@npm:0.27.3";
-        "@esbuild/linux-loong64" = packages."@esbuild/linux-loong64@npm:0.27.3";
-        "@esbuild/linux-mips64el" = packages."@esbuild/linux-mips64el@npm:0.27.3";
-        "@esbuild/linux-ppc64" = packages."@esbuild/linux-ppc64@npm:0.27.3";
-        "@esbuild/linux-riscv64" = packages."@esbuild/linux-riscv64@npm:0.27.3";
-        "@esbuild/linux-s390x" = packages."@esbuild/linux-s390x@npm:0.27.3";
-        "@esbuild/linux-x64" = packages."@esbuild/linux-x64@npm:0.27.3";
-        "@esbuild/netbsd-arm64" = packages."@esbuild/netbsd-arm64@npm:0.27.3";
-        "@esbuild/netbsd-x64" = packages."@esbuild/netbsd-x64@npm:0.27.3";
-        "@esbuild/openbsd-arm64" = packages."@esbuild/openbsd-arm64@npm:0.27.3";
-        "@esbuild/openbsd-x64" = packages."@esbuild/openbsd-x64@npm:0.27.3";
-        "@esbuild/openharmony-arm64" = packages."@esbuild/openharmony-arm64@npm:0.27.3";
-        "@esbuild/sunos-x64" = packages."@esbuild/sunos-x64@npm:0.27.3";
-        "@esbuild/win32-arm64" = packages."@esbuild/win32-arm64@npm:0.27.3";
-        "@esbuild/win32-ia32" = packages."@esbuild/win32-ia32@npm:0.27.3";
-        "@esbuild/win32-x64" = packages."@esbuild/win32-x64@npm:0.27.3";
       };
     };
     "estree-walker@npm:3.0.3" = {
@@ -1698,21 +1312,6 @@ let
         "node-gyp" = packages."node-gyp@npm:12.2.0";
       };
     };
-    "get-tsconfig@npm:4.13.5" = {
-      name = "get-tsconfig";
-      reference = "npm:4.13.5";
-      linkType = "HARD";
-      outputName = "get-tsconfig-4.13.5-89f1a48e7c";
-      outputHash = "e3dc58005f199f5c563c8bd58dbb98c02afa3fc814abdf78fd81b3ab0b302bcfdc5233a56769edcfa765a72d1db041f77f75c4fb67eb5593b58a77b704f3131e";
-      flatName = "get-tsconfig";
-      languageName = "node";
-      scope = null;
-      descriptorRange = "npm:^4.7.5";
-      checksum = "10c0/e3dc58005f199f5c563c8bd58dbb98c02afa3fc814abdf78fd81b3ab0b302bcfdc5233a56769edcfa765a72d1db041f77f75c4fb67eb5593b58a77b704f3131e";
-      dependencies = {
-        "resolve-pkg-maps" = packages."resolve-pkg-maps@npm:1.0.0";
-      };
-    };
     "glob@npm:13.0.1" = {
       name = "glob";
       reference = "npm:13.0.1";
@@ -1767,7 +1366,7 @@ let
       checksum = "10c0/4207b06a4580fb85dd6dff521f0abf6db517489e70863dca1a0291daa7f2d3d2d6015a57bd702af068ea5cf9f1f6ff72314f5f5b4228d299c0904135d2aef921";
       dependencies = {
         "agent-base" = packages."agent-base@npm:7.1.4";
-        "debug" = packages."debug@virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3";
+        "debug" = packages."debug@virtual:681630615e946e2f200c54b059afee56e65208a184161197fdec80c0837941d910208eb4a140e14a179b409cdf368e34755a0f5983828c59cb7f34a62911042b#npm:4.4.3";
       };
     };
     "https-proxy-agent@npm:7.0.6" = {
@@ -1783,7 +1382,7 @@ let
       checksum = "10c0/f729219bc735edb621fa30e6e84e60ee5d00802b8247aac0d7b79b0bd6d4b3294737a337b93b86a0bd9e68099d031858a39260c976dc14cdbba238ba1f8779ac";
       dependencies = {
         "agent-base" = packages."agent-base@npm:7.1.4";
-        "debug" = packages."debug@virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3";
+        "debug" = packages."debug@virtual:681630615e946e2f200c54b059afee56e65208a184161197fdec80c0837941d910208eb4a140e14a179b409cdf368e34755a0f5983828c59cb7f34a62911042b#npm:4.4.3";
       };
     };
     "iconv-lite@npm:0.6.3" = {
@@ -2265,9 +1864,6 @@ let
       languageName = "unknown";
       scope = null;
       descriptorRange = "workspace:packages/repro-pkg";
-      dependencies = {
-        "tsx" = packages."tsx@npm:4.21.0";
-      };
       devDependencies = {
         "vitest" = packages."vitest@virtual:273fe2134a62840f0263b1778ceb10c4d2bc72effd107cebb527f591eed53f38f9fbee572609647096bc339b42935a54dd9bad6d4259b445a0507788cb0440aa#npm:3.2.3";
       };
@@ -2283,18 +1879,6 @@ let
       languageName = "unknown";
       scope = null;
       descriptorRange = "workspace:.";
-    };
-    "resolve-pkg-maps@npm:1.0.0" = {
-      name = "resolve-pkg-maps";
-      reference = "npm:1.0.0";
-      linkType = "HARD";
-      outputName = "resolve-pkg-maps-1.0.0-135b70c854";
-      outputHash = "fb8f7bbe2ca281a73b7ef423a1cbc786fb244bd7a95cbe5c3fba25b27d327150beca8ba02f622baea65919a57e061eb5005204daa5f93ed590d9b77463a567ab";
-      flatName = "resolve-pkg-maps";
-      languageName = "node";
-      scope = null;
-      descriptorRange = "npm:^1.0.0";
-      checksum = "10c0/fb8f7bbe2ca281a73b7ef423a1cbc786fb244bd7a95cbe5c3fba25b27d327150beca8ba02f622baea65919a57e061eb5005204daa5f93ed590d9b77463a567ab";
     };
     "retry@npm:0.12.0" = {
       name = "retry";
@@ -2416,7 +2000,7 @@ let
       checksum = "10c0/5d2c6cecba6821389aabf18728325730504bf9bb1d9e342e7987a5d13badd7a98838cc9a55b8ed3cb866ad37cc23e1086f09c4d72d93105ce9dfe76330e9d2a6";
       dependencies = {
         "agent-base" = packages."agent-base@npm:7.1.4";
-        "debug" = packages."debug@virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3";
+        "debug" = packages."debug@virtual:681630615e946e2f200c54b059afee56e65208a184161197fdec80c0837941d910208eb4a140e14a179b409cdf368e34755a0f5983828c59cb7f34a62911042b#npm:4.4.3";
         "socks" = packages."socks@npm:2.8.7";
       };
     };
@@ -2554,7 +2138,7 @@ let
       flatName = "tinyglobby";
       languageName = "node";
       scope = null;
-      descriptorRange = "npm:^0.2.12";
+      descriptorRange = "npm:^0.2.14";
       checksum = "10c0/869c31490d0d88eedb8305d178d4c75e7463e820df5a9b9d388291daf93e8b1eb5de1dad1c1e139767e4269fe75f3b10d5009b2cc14db96ff98986920a186844";
       dependencies = {
         "fdir" = packages."fdir@virtual:0e783aadbd2b4b8e6f6056033c0b290501892d23bc7c5dad5477e00e48ad8bd3e4434c3962a52dd75a58e06dbb7218094a494bac954ef2f7f6fdb65d9717e5f4#npm:6.5.0";
@@ -2596,26 +2180,6 @@ let
       scope = null;
       descriptorRange = "npm:^4.0.3";
       checksum = "10c0/a8020fc17799251e06a8398dcc352601d2770aa91c556b9531ecd7a12581161fd1c14e81cbdaff0c1306c93bfdde8ff6d1c1a3f9bbe6d91604f0fd4e01e2f1eb";
-    };
-    "tsx@npm:4.21.0" = {
-      name = "tsx";
-      reference = "npm:4.21.0";
-      linkType = "HARD";
-      outputName = "tsx-4.21.0-3bc9626d81";
-      outputHash = "f5072923cd8459a1f9a26df87823a2ab5754641739d69df2a20b415f61814322b751fa6be85db7c6ec73cf68ba8fac2fd1cfc76bdb0aa86ded984d84d5d2126b";
-      flatName = "tsx";
-      languageName = "node";
-      scope = null;
-      descriptorRange = "npm:^4.21.0";
-      checksum = "10c0/f5072923cd8459a1f9a26df87823a2ab5754641739d69df2a20b415f61814322b751fa6be85db7c6ec73cf68ba8fac2fd1cfc76bdb0aa86ded984d84d5d2126b";
-      bin = {
-        "tsx" = "dist/cli.mjs";
-      };
-      dependencies = {
-        "esbuild" = packages."esbuild@npm:0.27.3";
-        "fsevents" = packages."fsevents@patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1";
-        "get-tsconfig" = packages."get-tsconfig@npm:4.13.5";
-      };
     };
     "unique-filename@npm:5.0.0" = {
       name = "unique-filename";
@@ -2663,7 +2227,7 @@ let
       };
       dependencies = {
         "cac" = packages."cac@npm:6.7.14";
-        "debug" = packages."debug@virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3";
+        "debug" = packages."debug@virtual:681630615e946e2f200c54b059afee56e65208a184161197fdec80c0837941d910208eb4a140e14a179b409cdf368e34755a0f5983828c59cb7f34a62911042b#npm:4.4.3";
         "es-module-lexer" = packages."es-module-lexer@npm:1.7.0";
         "pathe" = packages."pathe@npm:2.0.3";
         "vite" = packages."vite@virtual:681630615e946e2f200c54b059afee56e65208a184161197fdec80c0837941d910208eb4a140e14a179b409cdf368e34755a0f5983828c59cb7f34a62911042b#npm:7.3.1";
@@ -2798,7 +2362,7 @@ let
         "@vitest/spy" = packages."@vitest/spy@npm:3.2.3";
         "@vitest/utils" = packages."@vitest/utils@npm:3.2.3";
         "chai" = packages."chai@npm:5.3.3";
-        "debug" = packages."debug@virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3";
+        "debug" = packages."debug@virtual:681630615e946e2f200c54b059afee56e65208a184161197fdec80c0837941d910208eb4a140e14a179b409cdf368e34755a0f5983828c59cb7f34a62911042b#npm:4.4.3";
         "expect-type" = packages."expect-type@npm:1.3.0";
         "magic-string" = packages."magic-string@npm:0.30.21";
         "pathe" = packages."pathe@npm:2.0.3";
