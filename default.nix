@@ -1,4 +1,6 @@
-{ pkgs ? import ./../rhino-core/nix/pkgs.nix {} } :
+{
+  pkgs ? import ./../rhino-core/nix/pkgs.nix { },
+}:
 
 let
   yarnpnp2nix = import ./../yarnpnp2nix/default.nix;
@@ -7,7 +9,10 @@ let
   workspace = yarnpnp2nixLib.mkYarnPackagesFromManifest {
     inherit pkgs;
     yarnManifest = import ./workspace/yarn-manifest.nix;
+    packageOverrides."repro-pkg@workspace:packages/repro-pkg".build = ''
+      echo HI HI
+      vitest
+    '';
   };
 in
-  workspace."repro-pkg@workspace:packages/repro-pkg".shellRuntimeDevEnvironment
-
+workspace."repro-pkg@workspace:packages/repro-pkg"
