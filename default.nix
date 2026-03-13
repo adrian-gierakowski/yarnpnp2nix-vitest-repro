@@ -18,8 +18,8 @@ let
       vitest --config ${./vitest.config.mjs}
     '';
   };
-  vitestInSandbox = pkgs.stdenvNoCC.mkDerivation {
-    name = "vitestInSandbox";
+  vitestFromRuntimeEnvInSandbox = pkgs.stdenvNoCC.mkDerivation {
+    name = "vitestFromRuntimeEnvInSandbox";
     phases = [ "checkPhase" ];
     doCheck = true;
     checkPhase = ''
@@ -34,6 +34,6 @@ let
   };
 in
 {
-  inherit vitestInSandbox;
-  vitestDuringBuild = workspace."repro-pkg@workspace:packages/repro-pkg";
+  inherit vitestFromRuntimeEnvInSandbox;
+  vitestDuringPkgBuild = workspace."repro-pkg@workspace:packages/repro-pkg";
 }
