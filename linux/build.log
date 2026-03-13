@@ -1,0 +1,29 @@
+Running phase: checkPhase
+CWD: /nix/store/bk8qb0vwf77drshg66zbmyq332x344aj-repro-pkg
+pnpPath: /build/tmp.lDlvlUPvHg/.pnp.cjs
+loading vitest config
+/bin/sh: yarn: not found
+2:02:07 PM [vite] Get yarn cache dir error: Command failed: yarn config get enableGlobalCache
+/bin/sh: yarn: not found
+
+
+ RUN  v3.2.3 /nix/store/bk8qb0vwf77drshg66zbmyq332x344aj-repro-pkg
+
+
+ ❯ test.test.js [queued]
+
+ Test Files 0 passed (1)
+      Tests 0 passed (0)
+   Start at 14:02:07
+   Duration 501ms
+ ✓ test.test.js (1 test) 2ms
+   ✓ repro 1ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  14:02:07
+   Duration  603ms (transform 16ms, setup 0ms, collect 16ms, tests 2ms, environment 0ms, prepare 98ms)
+
+.pnp.cjs not found in /tmp
+Searching /build...
+Found .pnp.cjs at: /build/tmp.lDlvlUPvHg/.pnp.cjs
