@@ -10,6 +10,7 @@ let
     inherit pkgs;
     yarnManifest = import ./workspace/yarn-manifest.nix;
     packageOverrides."repro-pkg@workspace:packages/repro-pkg".build = ''
+      echo "NODE_OPTIONS: $NODE_OPTIONS"
       echo CWD: $(pwd)
       echo "running with vitest.config.mjs from workspace: vitest --config ./vitest.config.mjs"
       vitest --config ./vitest.config.mjs
