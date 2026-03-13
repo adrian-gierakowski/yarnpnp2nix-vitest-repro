@@ -30,7 +30,23 @@ let
         workspace."repro-pkg@workspace:packages/repro-pkg".shellRuntimeDevEnvironment
       }/bin/vitest --config ${./vitest.config.mjs}
 
-      echo "" > $out
+      # Find .pnp.cjs and copy it to $out
+      PNP_FILE=$(find /tmp -name ".pnp.cjs" | head -n 1)
+      if [ -n "$PNP_FILE" ]; then
+        echo "Found .pnp.cjs at: $PNP_FILE"
+        cp "$PNP_FILE" "$out"
+      else
+        echo ".pnp.cjs not found in /tmp"
+        echo "Searching /build..."
+        PNP_FILE=$(find /build -name ".pnp.cjs" | head -n 1)
+        if [ -n "$PNP_FILE" ]; then
+          echo "Found .pnp.cjs at: $PNP_FILE"
+          cp "$PNP_FILE" "$out"
+        else
+           echo "Could not find .pnp.cjs anywhere"
+           touch $out
+        fi
+      fi
     '';
   };
 in
